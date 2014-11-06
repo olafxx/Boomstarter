@@ -1,0 +1,155 @@
+ 
+/* CSS Document */
+
+body { 
+	margin:0; 
+	padding:0; 
+	font:16px Arial; 
+	color:#24342e; 
+	background:#fff; 
+	}
+
+* { outline:none}
+
+img                 { border:0 }
+
+h2 { 
+	color:#000; 
+	padding:0; 
+	margin:10px 0; 
+	line-height:normal;
+	}
+
+form { 
+	padding:0; 
+	margin:0;
+	}
+p { 
+	padding:0; 
+	margin:0 0 10px;
+	}
+
+ h2 { font-size:20px; }
+ 
+
+a { 
+	text-decoration:underline; 
+	color:#4a5360;
+	}
+a:hover  { text-decoration:none; }
+
+.clear { 
+	clear:both; 
+	line-height:0;
+	font-size:0;
+	height:0;
+	}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+
+/*  */
+
+  
+.layout {
+	width:1000px;
+	margin:50px auto;
+	position:relative;
+	} 
+
+/* */
+	
+.master {
+	
+	} 
+	.master__tab {
+		border-bottom:1px solid #ccc;
+  		}
+		.master__tab a {
+			 padding:5px 20px;
+			 border:1px solid #ccc;
+			 text-decoration:none;
+			 display:inline-block;
+			}
+		.master__tab a.current {
+			background:#eee;
+ 			}
+			
+	.master__content {
+		float:left;
+		width:780px;
+		padding:10px;
+		border-right:1px solid #ccc;
+		
+		min-height:500px;
+		height:auto !important;
+		height:500px;
+		
+		}
+		
+	.master__prev {
+		float:left;
+		width:179px;
+		padding:10px;
+		}
+ 
+/*  */
+
+.grid {
+	margin:5px;
+	}
+	.grid__row { 
+		clear:both;
+		}
+		
+		[class^="grid__col"] { 
+			float:left;
+			padding:10px;
+			box-sizing:border-box;
+			border-collapse:collapse;
+			}
+			.grid__content { 
+				border:1px solid #000;
+				padding:10px
+				}
+
+		.grid__col-3    { width:33.33333333333333%;  }
+		.grid__col-3-2  { width:66.666666666666664%; }
+		.grid__col-3-3  { width:100%; }
+
+ 			
+/**/
+
+.item {
+	border:1px solid #ccc;	
+	padding:5px;
+	font-size:14px;
+	}
+	.item h2 {
+		margin-bottom:5px;
+		font-size:18px;	
+		}
+
+.form1 input[type=text] {
+	width:100%;
+	} 
+.form1 textarea {
+	width:100%;
+	height:200px;
+	overflow:hidden;
+	} 
+
+/* */	
+	
+.right {
+	text-align:right;
+	}	
+.separation {
+	clear:both;
+	border-top:1px solid #ccc;
+	margin:10px 0;
+	} 
+ 	
+.hide {
+	display:none;
+	}	
+	

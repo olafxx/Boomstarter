@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+    <meta charset="utf-8" />
+	 
+    <link rel="stylesheet" href="files/css/style.css" />
+    
+	<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.15.0.css"> 
+	
+    <title>&nbsp;</title>
+
+
+	<script type="text/javascript" src="files/js/html5.js"></script>	
+	<script type="text/javascript" src="files/js/jquery-1.11.0.min.js"></script>	
+	
+    <script src="http://code.jquery.com/qunit/qunit-1.15.0.js"></script>	
+
+</head>
+
+<body >
+
+ <h1>QUnit тестирование - assert</h1>
+
+ 
+
+ <!-- Не используем, но при расширении приложения может понадобиться.  -->
+  	<script type="text/javascript" src="files/master/setting.js"></script>
+	
+ <!-- Работа с БД(localStorage).  -->
+  	<script type="text/javascript" src="files/master/bd.js"></script>
+	
+<!-- Не используем, но при расширении приложения может понадобиться.  -->
+  	<script type="text/javascript" src="files/master/lib.js"></script>
+
+<!--  -->
+  	<script type="text/javascript" src="files/master/template.js"></script>
+  	<script type="text/javascript" src="files/master/master.js"></script>
+ 
+	
+	<script>
+  
+		var tmp = [];
+		
+		tmp["key1"] = "val1";
+		tmp["key2"] = "val2";
+		tmp["key3"] = "val3";
+  
+  //Записываем значение в бд
+		bd.setData(tmp);
+		
+  //Проверяем записалось или нет
+		QUnit.test( "Проверяем записалось или нет", function( assert ) {
+		  assert.equal( localStorage.getItem("key1"), "val1",  "Equal succeeds" );
+		  assert.equal( localStorage.getItem("key2"), "val2",  "Equal succeeds" );
+		  assert.equal( localStorage.getItem("key3"), "val3",  "Equal succeeds" );
+		  assert.equal( localStorage.getItem("key123"), "val3",  "Не правильный тест, для проверки работы QUnit" );
+		});
+		 
+	</script>
+<div id="qunit"></div>
+
+</body>
+</html>

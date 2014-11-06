@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  
+    <meta charset="utf-8" />
+	 
+    <link rel="stylesheet" href="files/css/style.css" />
+  
+    <title>&nbsp;</title>
+
+
+	<script type="text/javascript" src="files/js/html5.js"></script>	
+	<script type="text/javascript" src="files/js/jquery-1.11.0.min.js"></script>	
+	
+	
+
+</head>
+
+<body>
+
+
+<div class="layout">
+   
+    <div id="master">Фронтенд приложение</div>
+
+</div>
+
+ <!-- Не используем, но при расширении приложения может понадобиться.  -->
+  	<script type="text/javascript" src="files/master/setting.js"></script>
+	
+ <!-- Работа с БД(localStorage).  -->
+  	<script type="text/javascript" src="files/master/bd.js"></script>
+	
+<!-- Не используем, но при расширении приложения может понадобиться.  -->
+  	<script type="text/javascript" src="files/master/lib.js"></script>
+
+<!--  -->
+  	<script type="text/javascript" src="files/master/template.js"></script>
+  	<script type="text/javascript" src="files/master/master.js"></script>
+ 
+	
+	<script>
+  
+		var projectName = "Test1";
+		
+		var project = new master();
+	    $("#master").html(project.create(projectName));
+	 	
+		 
+	</script>
+
+
+</body>
+</html>
